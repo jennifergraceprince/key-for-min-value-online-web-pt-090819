@@ -1,8 +1,14 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
+clothing = {jacket: 1, pant: 2, top: 5}
 
 def key_for_min_value(hash)
-  min_value = nil
+  min_item = nil
   min_amount = nil
-  
-end
+  hash.each do |item, amount|
+    if min_amount == nil || amount < min_amount
+      min_item = item
+      min_count = count
+    end
+  end
+min_item
